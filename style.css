@@ -451,7 +451,7 @@ a img.aligncenter {
     background-color: rgba(255, 255, 255);
     display: block;
     left: 0px;
-    padding: 10px 0px !important;   
+    padding: 0px 0px !important;   
     position: absolute;
     right: 0px;
     top: 0px;
@@ -1511,6 +1511,9 @@ body.app_version .customwidget li i{
     z-index: 55;
     transition: .4s;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #features i img {
@@ -2365,7 +2368,7 @@ body.app_version .dev-list .widget-title small{
     border-radius: 50px;
     color: white;
     padding: 10px 15px;
-    position: absolute;
+    position: absolute !important;
     right: 5px;
     top: 5px;
     transition: 0.3s;
@@ -2383,4 +2386,45 @@ body.app_version .dev-list .widget-title small{
 
   #social{
     padding: 3rem;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"] + label {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #fff;
+    border:solid 2px #750ec2;
+    color: #750ec2;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  
+  input[type="checkbox"]:checked + label {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background-color: #9d25ff; color: white; border-color:#9d25ff;
+  }
+
+  .poll li{
+    display: inline;
+    padding: .4em;
+  }
+
+  .icon-tabler{
+    width: 32px;
+    height: 32px;
+    stroke-width: 1px;
+    
   }
